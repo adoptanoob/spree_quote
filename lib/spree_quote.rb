@@ -1,0 +1,6 @@
+require 'spree_core'
+require 'spree_quote/engine'
+require 'figaro'
+require 'paperclip'
+require 'aws-sdk'
+require 'jquery-fileupload'

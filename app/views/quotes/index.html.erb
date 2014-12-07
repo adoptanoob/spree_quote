@@ -1,0 +1,14 @@
+<h1>Quotes#index</h1>
+<p>Find me in app/views/quotes/index.html.erb</p>
+
+<%= s3_uploader_form post: quotes_url, as: "quote[plan]" do %>
+  <%= file_field_tag :file, multiple: true %>
+<% end %>
+
+
+<script id="template-upload" type="text/x-tmpl">
+<div class="upload">
+  {%=o.name%}
+  <div class="progress"><div class="bar" style="width: 0%"></div></div>
+</div>
+</script>
